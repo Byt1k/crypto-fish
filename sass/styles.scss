@@ -1,5 +1,9 @@
 @import '_zeroing'; // файл обнуления стилей
 
+a {
+    text-decoration: none;
+}
+
 @font-face {
     font-family: 'Futura PT';
     src: url('../fonts/FuturaPT-Bold.eot');
@@ -36,5 +40,214 @@
     font-family: 'Lilita One', cursive;
 }
 
+%main-btn {
+    @extend %fontLilita;
+    background: #5133AB;
+    box-shadow: inset 0px 2px 0px #6C4CCE, inset 0px -2px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease;
+    &:hover {
+        color: #fff;
+        background: #6849c5;
+    }
+}
+
+%second-btn {
+    @extend %fontLilita;
+    font-size: 20px;
+    color: #FFFFFF;
+    // text-shadow: 1px 2px 0px #3D2680;
+    text-shadow:0px 1px 0 rgb(81,51,171),0px -1px 0 rgb(81,51,171),1px 0px 0 rgb(81,51,171),-1px 0px 0 rgb(81,51,171),1px 1px 0 rgb(81,51,171),1px -1px 0 rgb(81,51,171),-1px 1px 0 rgb(81,51,171),-1px -1px 0 rgb(81,51,171),2px 2px 1px rgba(0,0,0,1);
+    -webkit-text-shadow:0px 1px 0 rgb(81,51,171),0px -1px 0 rgb(81,51,171),1px 0px 0 rgb(81,51,171),-1px 0px 0 rgb(81,51,171),1px 1px 0 rgb(81,51,171),1px -1px 0 rgb(81,51,171),-1px 1px 0 rgb(81,51,171),-1px -1px 0 rgb(81,51,171),2px 2px 1px rgba(0,0,0,1);
+    -moz-text-shadow:0px 1px 0 rgb(81,51,171),0px -1px 0 rgb(81,51,171),1px 0px 0 rgb(81,51,171),-1px 0px 0 rgb(81,51,171),1px 1px 0 rgb(81,51,171),1px -1px 0 rgb(81,51,171),-1px 1px 0 rgb(81,51,171),-1px -1px 0 rgb(81,51,171),2px 2px 1px rgba(0,0,0,1);
+    background: #FFFFFF;
+    box-shadow: inset 0px 2px 0px #6C4CCE, inset 0px -2px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease;
+    &:hover {
+        color: #fff;
+        background: #f2eeff;
+    }
+}
+
+h1 {
+    @extend %fontLilita;
+    font-size: 60px;
+}
+
+h2 {
+    @extend %fontLilita;
+    font-size: 42px;
+}
+
+
+body {
+    background: #200038;
+    @extend %futuraRegular;
+    font-size: 20px;
+    color: #fff;
+    line-height: 25.6px;
+}
+
+.head-string {
+    @extend %fontLilita;
+    padding: 12px 0;
+    text-align: center;
+    background: #5133AB;
+    box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.25), inset 0px 2px 0px #6C4CCE;
+}
+
+main {
+    background: url(../img/main-bg.png) no-repeat center top / cover;
+    min-height: 807px;
+    padding-bottom: 66px;
+}
+
+.header {
+    padding-top: 35px;
+    &__menu {
+        a {
+            @extend %futuraBold;
+            font-size: 16px;
+            text-shadow: 0px 2px 2px #420681;
+            color: #fff;
+            transition: all .3s ease;
+            &:hover {
+                text-shadow: 0px 0px 10px #FFFFFF;
+            }
+        }
+    }
+    
+    &__btn {
+        @extend %main-btn;
+        width: 160px;
+        height: 45px;
+        margin-left: auto;
+    }
+}
+
+.main-offer {
+    margin-top: 200px;
+    &__text {
+        font-size: 22px;
+        margin: 32px 0 87px 0;
+    }
+    &__btn {
+        @extend %main-btn;
+        width: 180px;
+        height: 62px;
+    }
+}
+
+.main-link {
+    font-size: 17px;
+    color: #fff;
+    text-decoration: underline;
+    margin-top: 100px;
+    display: block;
+    transition: all .3s ease;
+    &:hover {
+        color: #fff;
+    }
+}
+
+.about {
+    background: url(../img/bg2.png) no-repeat center top / cover;
+    padding: 173px 0 167px 0;
+    &__planet-img {
+        margin-top: 15px;
+    }
+    h2 {
+        margin-bottom: 20px;
+    }
+    &__list {
+        list-style: disc;
+        margin-top: 25px;
+        li {
+            margin-bottom: 3px;
+            b {
+                @extend %futuraBold;
+            }
+        }
+    }
+    h2.second-title, .about__fish-img {
+        margin-top: 86px;
+    }
+    &__btns {
+        margin-top: 34px;
+        display: flex;
+        a {
+            @extend %main-btn;
+            width: 180px;
+            height: 62px;
+            &:nth-child(2) {
+                margin-left: 81px;
+            }
+        }
+    }
+}
+
+.world {
+    background: url(../img/bg3.png) no-repeat center top / cover;
+    .second-title {
+        margin: 25px 0 116px 0;
+        font-size: 22px;
+    }
+    &__item {
+        &_title {
+            @extend %fontLilita;
+            font-size: 64px;
+            line-height: 73px;
+            margin-top: 34px;
+        }
+        &_text {
+            font-size: 17px;
+            line-height: 22px;
+            b {
+                @extend %futuraBold;
+            }  
+        }
+        &.custom {
+            img {
+                margin-top: -63px;
+            }
+            .world__item_title {
+                margin-top: 7px;
+            }
+        }
+    }
+    &__btn {
+        @extend %second-btn;
+        width: 350px;
+        height: 62px;
+        margin: 70px auto 0 auto;
+        margin-bottom: 176px;
+    }
+
+    .learning {
+        h2 {
+            margin: 65px 0 20px 0;
+        }
+        p {
+            b {
+                @extend %futuraBold;
+            }
+        }
+        &__btn {
+            @extend %main-btn;
+            width: 180px;
+            height: 62px;
+            margin-top: 33px;
+        }
+    }
+}
 
 

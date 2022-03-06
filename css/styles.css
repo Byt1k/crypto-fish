@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 @font-face {
   font-family: 'Futura PT';
   src: url("../fonts/FuturaPT-Bold.eot");
@@ -12,4 +16,237 @@
   src: local("Futura PT"), local("FuturaPT"), url("../fonts/FuturaPT-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaPT-Book.woff") format("woff"), url("../fonts/FuturaPT-Book.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
+}
+
+.header__menu a, .about__list li b, .world__item_text b, .world .learning p b {
+  font-family: 'Futura PT';
+  font-weight: 700;
+}
+
+body {
+  font-family: 'Futura PT';
+  font-weight: 400;
+}
+
+.header__btn, .main-offer__btn, .about__btns a, .world .learning__btn, .world__btn, h1, h2, .head-string, .world__item_title {
+  font-family: 'Lilita One', cursive;
+}
+
+.header__btn, .main-offer__btn, .about__btns a, .world .learning__btn {
+  background: #5133AB;
+  -webkit-box-shadow: inset 0px 2px 0px #6C4CCE, inset 0px -2px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0px 2px 0px #6C4CCE, inset 0px -2px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  font-size: 20px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.header__btn:hover, .main-offer__btn:hover, .about__btns a:hover, .world .learning__btn:hover {
+  color: #fff;
+  background: #6849c5;
+}
+
+.world__btn {
+  font-size: 20px;
+  color: #FFFFFF;
+  text-shadow: 0px 1px 0 #5133ab, 0px -1px 0 #5133ab, 1px 0px 0 #5133ab, -1px 0px 0 #5133ab, 1px 1px 0 #5133ab, 1px -1px 0 #5133ab, -1px 1px 0 #5133ab, -1px -1px 0 #5133ab, 2px 2px 1px black;
+  -webkit-text-shadow: 0px 1px 0 #5133ab, 0px -1px 0 #5133ab, 1px 0px 0 #5133ab, -1px 0px 0 #5133ab, 1px 1px 0 #5133ab, 1px -1px 0 #5133ab, -1px 1px 0 #5133ab, -1px -1px 0 #5133ab, 2px 2px 1px black;
+  -moz-text-shadow: 0px 1px 0 #5133ab, 0px -1px 0 #5133ab, 1px 0px 0 #5133ab, -1px 0px 0 #5133ab, 1px 1px 0 #5133ab, 1px -1px 0 #5133ab, -1px 1px 0 #5133ab, -1px -1px 0 #5133ab, 2px 2px 1px black;
+  background: #FFFFFF;
+  -webkit-box-shadow: inset 0px 2px 0px #6C4CCE, inset 0px -2px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0px 2px 0px #6C4CCE, inset 0px -2px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.world__btn:hover {
+  color: #fff;
+  background: #f2eeff;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 42px;
+}
+
+body {
+  background: #200038;
+  font-size: 20px;
+  color: #fff;
+  line-height: 25.6px;
+}
+
+.head-string {
+  padding: 12px 0;
+  text-align: center;
+  background: #5133AB;
+  -webkit-box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.25), inset 0px 2px 0px #6C4CCE;
+          box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.25), inset 0px 2px 0px #6C4CCE;
+}
+
+main {
+  background: url(../img/main-bg.png) no-repeat center top/cover;
+  min-height: 807px;
+  padding-bottom: 66px;
+}
+
+.header {
+  padding-top: 35px;
+}
+
+.header__menu a {
+  font-size: 16px;
+  text-shadow: 0px 2px 2px #420681;
+  color: #fff;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.header__menu a:hover {
+  text-shadow: 0px 0px 10px #FFFFFF;
+}
+
+.header__btn {
+  width: 160px;
+  height: 45px;
+  margin-left: auto;
+}
+
+.main-offer {
+  margin-top: 200px;
+}
+
+.main-offer__text {
+  font-size: 22px;
+  margin: 32px 0 87px 0;
+}
+
+.main-offer__btn {
+  width: 180px;
+  height: 62px;
+}
+
+.main-link {
+  font-size: 17px;
+  color: #fff;
+  text-decoration: underline;
+  margin-top: 100px;
+  display: block;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.main-link:hover {
+  color: #fff;
+}
+
+.about {
+  background: url(../img/bg2.png) no-repeat center top/cover;
+  padding: 173px 0 167px 0;
+}
+
+.about__planet-img {
+  margin-top: 15px;
+}
+
+.about h2 {
+  margin-bottom: 20px;
+}
+
+.about__list {
+  list-style: disc;
+  margin-top: 25px;
+}
+
+.about__list li {
+  margin-bottom: 3px;
+}
+
+.about h2.second-title, .about .about__fish-img {
+  margin-top: 86px;
+}
+
+.about__btns {
+  margin-top: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about__btns a {
+  width: 180px;
+  height: 62px;
+}
+
+.about__btns a:nth-child(2) {
+  margin-left: 81px;
+}
+
+.world {
+  background: url(../img/bg3.png) no-repeat center top/cover;
+}
+
+.world .second-title {
+  margin: 25px 0 116px 0;
+  font-size: 22px;
+}
+
+.world__item_title {
+  font-size: 64px;
+  line-height: 73px;
+  margin-top: 34px;
+}
+
+.world__item_text {
+  font-size: 17px;
+  line-height: 22px;
+}
+
+.world__item.custom img {
+  margin-top: -63px;
+}
+
+.world__item.custom .world__item_title {
+  margin-top: 7px;
+}
+
+.world__btn {
+  width: 350px;
+  height: 62px;
+  margin: 70px auto 0 auto;
+  margin-bottom: 176px;
+}
+
+.world .learning h2 {
+  margin: 65px 0 20px 0;
+}
+
+.world .learning__btn {
+  width: 180px;
+  height: 62px;
+  margin-top: 33px;
 }
