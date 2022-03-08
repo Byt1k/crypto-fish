@@ -106,7 +106,7 @@ body {
 }
 
 main {
-    background: url(../img/main-bg.png) no-repeat center top / cover;
+    background: url(../img/main-bg.png) no-repeat center bottom / cover;
     min-height: 807px;
     padding-bottom: 66px;
 }
@@ -246,6 +246,121 @@ main {
             width: 180px;
             height: 62px;
             margin-top: 33px;
+        }
+    }
+}
+
+.things {
+    padding-top: 195px;
+    &__title {
+        margin-bottom: 65px;
+    }
+    &__item {
+        position: relative;
+        margin-bottom: 70px;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        &_text {
+            margin: 0 0 0 280px;
+            padding-top: 100px;
+            p {
+                font-size: 20px;
+                line-height: 26px;
+                margin-top: 11px;
+                span {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    &__email {
+        margin: 74px 0 136px 0;
+        position: relative;
+        .shark {
+            position: absolute;
+            top: -260px;
+            left: 10px;
+            z-index: -1;
+        }   
+        a {
+            color: #fff;
+            text-decoration: underline;
+            transition: all .3s ease;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.roadmap {
+    overflow: hidden;
+    h2 {
+        margin-bottom: 65px;
+    }
+    &__carousel {
+        .owl-dot span {
+            width: 42px !important;
+            height: 14px !important;
+            background: #5133AB !important;
+            border-radius: 50px !important;
+        }
+        .owl-dot.active span {
+            width: 14px !important;
+            border: 1px solid #5133AB !important;
+            background: none !important;
+        }
+        .owl-stage-outer {
+            width: calc(100% + (100vw - 1140px)/2);
+          }
+        .owl-item:not(:last-child)::after {
+            position: absolute;
+            top: 60px;
+            left: 152px;
+            content: url(../img/bubble-small.svg);
+        }
+    }
+    &__item {
+        &_bubble {
+            width: 144px;
+            height: 144px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 37px;
+            img {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 0;
+            }
+        }
+        p {
+            @extend %futuraBold;
+            z-index: 1;
+        }
+        &_number {
+            position: absolute;
+            top: 13px;
+            right: 20px;
+        }
+        &_title {
+            position: relative;
+        }
+
+        &_list {
+            width: 144x;
+            padding-left: 20px;
+            li {
+                font-size: 16px;
+                line-height: 19px;
+            }
         }
     }
 }
