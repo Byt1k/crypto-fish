@@ -28,7 +28,7 @@ body {
   font-weight: 400;
 }
 
-.header__btn, .main-offer__btn, .about__btns a, .world .learning__btn, .world__btn, h1, h2, .head-string, .world__item_title {
+.header__btn, .main-offer__btn, .about__btns a, .world .learning__btn, .world__btn, .footer__btn, h1, h2, .head-string, .world__item_title, .partners__items .second-title {
   font-family: 'Lilita One', cursive;
 }
 
@@ -57,7 +57,7 @@ body {
   background: #6849c5;
 }
 
-.world__btn {
+.world__btn, .footer__btn {
   font-size: 20px;
   color: #FFFFFF;
   text-shadow: 0px 1px 0 #5133ab, 0px -1px 0 #5133ab, 1px 0px 0 #5133ab, -1px 0px 0 #5133ab, 1px 1px 0 #5133ab, 1px -1px 0 #5133ab, -1px 1px 0 #5133ab, -1px -1px 0 #5133ab, 2px 2px 1px black;
@@ -80,7 +80,7 @@ body {
   transition: all .3s ease;
 }
 
-.world__btn:hover {
+.world__btn:hover, .footer__btn:hover {
   color: #fff;
   background: #f2eeff;
 }
@@ -387,4 +387,106 @@ main {
 .roadmap__item_list li {
   font-size: 16px;
   line-height: 19px;
+}
+
+.down-bg {
+  background: url(../img/down-bg.png) no-repeat center top/cover;
+}
+
+.partners {
+  padding-top: 84px;
+}
+
+.partners__title {
+  margin-bottom: 41px;
+}
+
+.partners__items {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.partners__items .item {
+  width: 131px;
+  margin: 0 20px 18px 20px;
+}
+
+.partners__items .item img {
+  width: 100%;
+}
+
+.partners__items .second-title {
+  position: absolute;
+  top: 250px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font-size: 72px;
+  text-align: center;
+}
+
+.contacts {
+  margin-top: 180px;
+}
+
+.contacts h2 {
+  margin-bottom: 66px;
+}
+
+.contacts__links {
+  margin-bottom: 14px;
+}
+
+.contacts__links * {
+  font-size: 24px;
+  line-height: 31px;
+  color: #5133AB;
+}
+
+.contacts__links a:hover {
+  text-decoration: underline;
+  color: #5133AB;
+}
+
+.contacts__links span {
+  margin: 0 10px;
+}
+
+.contacts__copyright {
+  font-size: 24px;
+  margin: 25px 0 36px 0;
+}
+
+.footer {
+  padding: 19px 0;
+  background: #5133AB;
+}
+
+.footer p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.footer__btn {
+  width: 125px;
+  height: 46px;
+  margin-right: 15px;
+  border: 1px solid #FFFFFF;
+  background: none;
+  border-radius: 3px;
 }

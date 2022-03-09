@@ -365,4 +365,86 @@ main {
     }
 }
 
+.down-bg {
+    background: url(../img/down-bg.png) no-repeat center top / cover;
+}
+
+.partners {
+    padding-top: 84px;
+    &__title {
+        margin-bottom: 41px;
+    }
+    &__items {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        .item {
+            width: 131px;
+            margin: 0 20px 18px 20px;
+            img {
+                width: 100%;
+            }
+        }
+        .second-title {
+            position: absolute;
+            top: 250px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            font-size: 72px;
+            @extend %fontLilita;
+            text-align: center;
+        }
+    }
+}
+
+.contacts {
+    margin-top: 180px;
+    h2 {
+        margin-bottom: 66px;
+    }
+    &__links {
+        margin-bottom: 14px;
+        * {
+            font-size: 24px;
+            line-height: 31px;
+            color: #5133AB;
+        }
+        a {
+            &:hover {
+                text-decoration: underline;
+                color: #5133AB;
+            }
+        }
+        span {
+            margin: 0 10px;
+        }
+    }
+    &__copyright {
+        font-size: 24px;
+        margin: 25px 0 36px 0;
+    }
+}
+
+.footer {
+    padding: 19px 0;
+    background: #5133AB;
+    p {
+        font-size: 16px;
+        margin: 0;
+    }
+    &__btn {
+        @extend %second-btn;
+        width: 125px;
+        height: 46px;
+        margin-right: 15px;
+        border: 1px solid #FFFFFF;
+        background: none;
+        border-radius: 3px;
+    }
+}
 
