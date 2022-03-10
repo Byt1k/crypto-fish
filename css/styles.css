@@ -109,7 +109,7 @@ body {
 }
 
 main {
-  background: url(../img/main-bg.png) no-repeat center bottom/cover;
+  background: url(../img/main-bg.png) no-repeat center top;
   min-height: 807px;
   padding-bottom: 66px;
 }
@@ -249,6 +249,10 @@ main {
   width: 180px;
   height: 62px;
   margin-top: 33px;
+}
+
+.world .learning__img-mobile {
+  display: none;
 }
 
 .things {
@@ -489,4 +493,71 @@ main {
   border: 1px solid #FFFFFF;
   background: none;
   border-radius: 3px;
+}
+
+@media (max-width: 1200px) {
+  .things__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .things__item img {
+    position: relative;
+    margin-right: 10px;
+  }
+  .things__item.reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .things__item.reverse img {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+  .things__item_text {
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+  }
+  .things__email {
+    margin-top: 0;
+  }
+  .roadmap__carousel .owl-stage-outer {
+    width: calc(100% + (100vw - 960px)/2) !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .header {
+    display: none;
+  }
+  .about__reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .world {
+    background: none;
+  }
+  .world__item {
+    text-align: center;
+  }
+  .world__item p {
+    text-align: left;
+  }
+  .world .second-title {
+    margin-bottom: 50px;
+  }
+  .world .learning__img-desktop {
+    display: none;
+  }
+  .world .learning__img-mobile {
+    display: block;
+    margin: 26px auto 29px auto;
+  }
+  .world .learning__btn {
+    margin: 0 auto;
+  }
 }

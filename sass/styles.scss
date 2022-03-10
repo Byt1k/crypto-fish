@@ -106,7 +106,7 @@ body {
 }
 
 main {
-    background: url(../img/main-bg.png) no-repeat center bottom / cover;
+    background: url(../img/main-bg.png) no-repeat center top;
     min-height: 807px;
     padding-bottom: 66px;
 }
@@ -246,6 +246,9 @@ main {
             width: 180px;
             height: 62px;
             margin-top: 33px;
+        }
+        &__img-mobile {
+          display: none;
         }
     }
 }
@@ -446,5 +449,91 @@ main {
         background: none;
         border-radius: 3px;
     }
+}
+
+
+
+
+@media (max-width: 1200px) {
+  .things {
+    &__item {
+      display: flex;
+      img {
+        position: relative;
+        margin-right: 10px;
+      }
+      &.reverse {
+        flex-direction: row-reverse;
+        img {
+          margin-right: 0;
+          margin-left: 10px;
+        }
+      }
+      
+      &_text {
+        margin: 0;
+        padding: 0;
+        margin-top: 5px;
+      }
+    }
+    &__email {
+      margin-top: 0;
+    }
+  }
+
+  .roadmap__carousel {
+    .owl-stage-outer {
+      width: calc(100% + (100vw - 960px)/2) !important;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .header {
+    display: none;
+  }
+
+  .about {
+    &__reverse {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .world {
+    background: none;
+    &__item {
+      text-align: center;
+      p {
+        text-align: left;
+      }
+    }
+    .second-title {
+      margin-bottom: 50px;
+    }
+    .learning {
+      &__img-desktop {
+        display: none;
+      }
+      &__img-mobile {
+        display: block;
+        margin: 26px auto 29px auto;
+      }
+      &__btn {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  
+
+  
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 575px) {
+
 }
 
