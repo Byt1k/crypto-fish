@@ -3,9 +3,10 @@ $('.roadmap__carousel').owlCarousel({
   margin: 42,
   dots: true,
   responsive: {
-    // 0:{
-    //     items:1
-    // },
+    0:{
+        items:2,
+        dots: false
+    },
     768: {
       items: 4
     },

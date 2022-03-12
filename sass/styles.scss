@@ -436,9 +436,16 @@ main {
 .footer {
     padding: 19px 0;
     background: #5133AB;
-    p {
+    &__text {
         font-size: 16px;
         margin: 0;
+        a {
+            color: #fff;
+            text-decoration: underline;
+            &:hover {
+                text-decoration: none;
+            }
+        }
     }
     &__btn {
         @extend %second-btn;
@@ -535,10 +542,8 @@ main {
 
     .partners {
         &__items {
-            .item {
-                img.dn {
-                    display: none;
-                }
+            .item.dn {
+                display: none;
             }
         }
     }
@@ -596,7 +601,7 @@ main {
         margin-top: 43px;
     }
     .about {
-        padding-top: 75px;
+        padding: 75px 0 50px 0;
         background: url(../img/about-bg-mobile.png) no-repeat center top;
         img {
             max-width: 100%;
@@ -618,8 +623,100 @@ main {
             }
         }
     }
-    
+    .world {
+        .second-title {
+            font-size: 16px;
+            margin: 9px 0 45px 0;
+        }
+        &__item {
+            &_title {
+                font-size: 33px;
+                line-height: 38px;
+                margin: 25px 0 12px 0;
+            }
+            img {
+                max-width: 100%;
+                margin-top: 0 !important;
+            }
+            margin-bottom: 47px;
+        }
+        &__btn {
+            margin: 30px auto 0 auto;
+        }
+        .learning {
+            h2 {
+                text-align: center;
+                margin: 110px 0 29px 0;
+            }
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+    .things {
+        padding-top: 79px;
+        &__item {
+            img {
+                max-width: 188px;
+            }
+            &_text p {
+                font-size: 16px;
+                line-height: 21px;
+            }
+            margin-bottom: 45px;
+        }
+        &__email {
+            .shark {
+                display: none;
+            }
+            margin: 20px 0 0 0;
+        }
+    }    
+    .roadmap {
+        padding-top: 77px;
+        &__carousel {
+            .owl-stage-outer {
+                width: 100% !important;
+            }
+        }
+    }
+    .partners {
+        &__items {
+            .item {
+                width: 89px;
+                margin: 0 0 12px 0;
+                &:nth-child(2n) {
+                    margin: 0 13px 12px 13px;
+                }
+            }
+            .second-title {
+                top: 180px;
+            }
+        }
+    }
 
+    .contacts {
+        margin-top: 0;
+        padding-top: 98px;
+        h2 {
+            margin-bottom: 60px;
+        }
+        &__links {
+            margin-bottom: 11px;
+            * {
+                font-size: 16px;
+                line-height: 21px;
+            }
+        }
+        &__copyright {
+            font-size: 16px;
+            line-height: 21px;
+            margin: 63px 0 51px 0;
+        }
+    }
+    .down-bg {
+        background: url(../img/down-bg-mobile.png) no-repeat center bottom;
+    }
 }
 
 @media (max-width: 575px) {

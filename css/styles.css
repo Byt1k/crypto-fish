@@ -481,9 +481,18 @@ main {
   background: #5133AB;
 }
 
-.footer p {
+.footer__text {
   font-size: 16px;
   margin: 0;
+}
+
+.footer__text a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer__text a:hover {
+  text-decoration: none;
 }
 
 .footer__btn {
@@ -566,7 +575,7 @@ main {
   .roadmap__carousel .owl-stage-outer {
     width: calc(100% + (100vw - 720px)/2) !important;
   }
-  .partners__items .item img.dn {
+  .partners__items .item.dn {
     display: none;
   }
   .footer__text {
@@ -616,7 +625,7 @@ main {
     margin-top: 43px;
   }
   .about {
-    padding-top: 75px;
+    padding: 75px 0 50px 0;
     background: url(../img/about-bg-mobile.png) no-repeat center top;
   }
   .about img {
@@ -640,5 +649,88 @@ main {
   }
   .about__btns a:nth-child(2) {
     margin: 29px auto 0 auto;
+  }
+  .world .second-title {
+    font-size: 16px;
+    margin: 9px 0 45px 0;
+  }
+  .world__item {
+    margin-bottom: 47px;
+  }
+  .world__item_title {
+    font-size: 33px;
+    line-height: 38px;
+    margin: 25px 0 12px 0;
+  }
+  .world__item img {
+    max-width: 100%;
+    margin-top: 0 !important;
+  }
+  .world__btn {
+    margin: 30px auto 0 auto;
+  }
+  .world .learning h2 {
+    text-align: center;
+    margin: 110px 0 29px 0;
+  }
+  .world .learning img {
+    max-width: 100%;
+  }
+  .things {
+    padding-top: 79px;
+  }
+  .things__item {
+    margin-bottom: 45px;
+  }
+  .things__item img {
+    max-width: 188px;
+  }
+  .things__item_text p {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .things__email {
+    margin: 20px 0 0 0;
+  }
+  .things__email .shark {
+    display: none;
+  }
+  .roadmap {
+    padding-top: 77px;
+  }
+  .roadmap__carousel .owl-stage-outer {
+    width: 100% !important;
+  }
+  .partners__items .item {
+    width: 89px;
+    margin: 0 0 12px 0;
+  }
+  .partners__items .item:nth-child(2n) {
+    margin: 0 13px 12px 13px;
+  }
+  .partners__items .second-title {
+    top: 180px;
+  }
+  .contacts {
+    margin-top: 0;
+    padding-top: 98px;
+  }
+  .contacts h2 {
+    margin-bottom: 60px;
+  }
+  .contacts__links {
+    margin-bottom: 11px;
+  }
+  .contacts__links * {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .contacts__copyright {
+    font-size: 16px;
+    line-height: 21px;
+    margin: 63px 0 51px 0;
+  }
+  .down-bg {
+    background: url(../img/down-bg-mobile.png) no-repeat center bottom;
   }
 }
