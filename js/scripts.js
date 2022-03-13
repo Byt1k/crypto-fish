@@ -3,9 +3,9 @@ $('.roadmap__carousel').owlCarousel({
   margin: 42,
   dots: true,
   responsive: {
-    0:{
-        items:2,
-        dots: false
+    0: {
+      items: 2,
+      dots: false
     },
     768: {
       items: 4
@@ -16,3 +16,20 @@ $('.roadmap__carousel').owlCarousel({
   }
   // autoWidth: true
 })
+
+
+
+// Заглушка куков
+
+let cookiesOk = document.getElementById('cookies-ok');
+let cookiesDecline = document.getElementById('cookies-decline');
+let cookiesBlock = document.querySelector('.cookies');
+
+let hideCookiesBlock = () => {
+  cookiesBlock.classList.remove('active');
+}
+
+cookiesOk.addEventListener('click', hideCookiesBlock);
+cookiesDecline.addEventListener('click', hideCookiesBlock);
+//
+

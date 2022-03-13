@@ -433,9 +433,18 @@ main {
     }
 }
 
-.footer {
+.cookies {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
     padding: 19px 0;
     background: #5133AB;
+    &.active {
+      display: block;
+    }
     &__text {
         font-size: 16px;
         margin: 0;
@@ -548,7 +557,7 @@ main {
         }
     }
 
-    .footer {
+    .cookies {
         &__text {
             margin-bottom: 10px !important;
         }
@@ -557,11 +566,6 @@ main {
         }
     }
 
-
-
-
-
-  
 }
 
 @media (max-width: 767px) {
@@ -579,6 +583,7 @@ main {
     }
     main {
         background: url(../img/main-bg-mobile.png) no-repeat center top;
+        background-size: contain;
         padding-bottom: 0;
         min-height: auto;
     }
