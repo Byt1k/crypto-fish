@@ -28,7 +28,7 @@ body {
   font-weight: 400;
 }
 
-.header__btn, .main-offer__btn, .about__btns a, .world .learning__btn, .world__btn, .cookies__btn, h1, h2, .head-string, .world__item_title, .partners__items .second-title {
+.header__btn, .main-offer__btn, .about__btns a, .world .learning__btn, .world__btn, .cookies__btn, h1, h2, .head-string__text, .world__item_title, .partners__items .second-title, .mobile-menu__item .comming-soon {
   font-family: 'Lilita One', cursive;
 }
 
@@ -102,10 +102,19 @@ body {
 
 .head-string {
   padding: 12px 0;
-  text-align: center;
   background: #5133AB;
   -webkit-box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.25), inset 0px 2px 0px #6C4CCE;
           box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.25), inset 0px 2px 0px #6C4CCE;
+}
+
+.head-string__text {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.head-string__burger {
+  display: none;
 }
 
 main {
@@ -448,8 +457,40 @@ main {
   margin-top: 180px;
 }
 
-.contacts h2 {
-  margin-bottom: 66px;
+.contacts__socials {
+  margin: 24px 0 32px 0;
+}
+
+.contacts__socials_item {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid #27C7EC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts__socials_item:hover {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  background: #27C7EC;
+}
+
+.contacts__socials_item:hover svg path {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  fill: #fff !important;
+}
+
+.contacts__socials_item:nth-child(2n) {
+  margin: 0 39px;
 }
 
 .contacts__links {
@@ -514,6 +555,107 @@ main {
   border-radius: 3px;
 }
 
+.mobile-menu {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  background: #341b48;
+  padding: 16px 24px;
+}
+
+.mobile-menu__wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.mobile-menu.active {
+  right: 0;
+}
+
+.mobile-menu__close {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 47px;
+}
+
+.mobile-menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 27px;
+  margin-bottom: 17px;
+}
+
+.mobile-menu__item a {
+  display: block;
+  min-width: 95px;
+  text-align: right;
+  margin-left: 5px;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+.mobile-menu__item .comming-soon {
+  width: 84px;
+  height: 20px;
+  background: #5133AB;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobile-menu__footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.mobile-menu__footer .contacts__links {
+  margin-bottom: 6px;
+}
+
+.mobile-menu__socials {
+  margin: 0 0 27px 0;
+}
+
+.mobile-menu__socials_item {
+  border-color: #fff;
+}
+
+.mobile-menu__socials svg path {
+  fill: #fff;
+}
+
+.mobile-menu__credits {
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 30px;
+}
+
 @media (max-width: 1200px) {
   .things__item {
     display: -webkit-box;
@@ -548,6 +690,16 @@ main {
 }
 
 @media (max-width: 991px) {
+  .head-string__text {
+    text-align: left;
+  }
+  .head-string__burger {
+    display: block;
+    margin-left: auto;
+  }
+  .mobile-menu {
+    display: block;
+  }
   .header {
     display: none;
   }
@@ -726,8 +878,8 @@ main {
     margin-top: 0;
     padding-top: 98px;
   }
-  .contacts h2 {
-    margin-bottom: 60px;
+  .contacts__socials {
+    margin: 7px 0 12px 0;
   }
   .contacts__links {
     margin-bottom: 11px;
