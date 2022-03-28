@@ -571,6 +571,11 @@ main {
   }
 }
 
+.change-orientation {
+    display: none;
+}
+
+
 
 
 @media (max-width: 1200px) {
@@ -682,7 +687,23 @@ main {
             justify-content: center;
         }
     }
-
+    @media (orientation: landscape) {
+        .change-orientation {
+            display: flex !important;
+            justify-content: center;
+            align-items: center;           
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: #200038;
+            z-index: 9999999;
+            img {
+                max-width: 30%;
+            }
+        }
+    }
 }
 
 @media (max-width: 767px) {

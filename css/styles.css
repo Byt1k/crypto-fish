@@ -656,6 +656,10 @@ main {
   margin-top: 30px;
 }
 
+.change-orientation {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .things__item {
     display: -webkit-box;
@@ -747,6 +751,30 @@ main {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (max-width: 991px) and (orientation: landscape) {
+  .change-orientation {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #200038;
+    z-index: 9999999;
+  }
+  .change-orientation img {
+    max-width: 30%;
   }
 }
 
